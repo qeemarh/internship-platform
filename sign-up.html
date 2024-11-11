@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <header data-aos="fade-down" class="navbar">
+        <div class="container-1">
+            <h1 class="logo">Youth Empowerment</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form data-aos="fade-right" action="" id="reg">
+            <h2>Sign up</h2>
+            <select name="dropdown" id="select" required>
+                <option value="Select user type">Select user type</option>
+                <option value="Fellow">Fellow</option>
+                <option value="Organization">Organization <a href="organization-signup.html"></a></option>
+            </select>
+            <input type="submit" id="submit" onclick="reg()" value="enter">
+            <p>Already have an account?<a href="./login.html"> Login</a></p>
+        </form>
+        <div data-aos="fade-left" class="img">
+            <img src="up.png" alt="">
+        </div>
+    </div>
+       <!-- Popup Modal -->
+<div id="popupMessage" class="popup hidden">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p id="popupText">Please select a valid user type.</p>
+    </div>
+</div>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 100,
+        });
+      </script>
+</body>
+<script src="sign-up.js"></script>
+</html>

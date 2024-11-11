@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #1995ad;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: o auto;
+}
+
+header {
+    background-color: #a1d6e2;
+}
+.form-group {
+    margin-bottom: 13px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.container-1 {
+    display: flex;
+    color: #2a3132;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "passero";
+}
+
+.container {
+    display: flex;
+    margin-top: 1px;
+}
+
+form {
+    padding: 260px;
+    background-color: #f1f1f2;
+    box-shadow: 40px 40px 40px black;
+    border-radius: 40px;
+    height: 600px;
+    width: 563px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+}
+
+img {
+    height: 650px;
+    padding-top: 70px;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-size: larger;
+}
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+input[placeholder] {
+    font-size: larger;
+}
+button[type="submit"] {
+    width: 100%;
+    height: 80px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+
+
+@media (max-width: 900px) {
+
+    body {
+        width: min(600px, 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+ 
+    div {
+        display: flex;
+        width: min(600px, 100%);
+        align-items: center;
+        justify-content: center;
+        margin: 200px 0 0;
+    }
+
+    form {
+        width: min(600px, 100%);
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    input {
+        width: min(600px, 98%);
+    }
+
+}
+
+@font-face {
+    font-family: "passero";
+    src: url(PasseroOne-Regular.ttf);
+}
